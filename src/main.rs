@@ -1,3 +1,12 @@
+mod app;
+mod home;
+// mod navbar;
+// mod projects;
+// mod resume;
+
+use app::App;
+use leptos::*;
+
 fn main() {
-    println!("Hello, world!");
+    leptos::mount_to_body(|| view! {<App/>})
 }
